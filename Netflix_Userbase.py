@@ -62,7 +62,7 @@ elif page == "Visualisasi Data":
         plt.xlabel('Tipe layanan')
         plt.ylabel('jumlah pengguna')
         st.pyplot(plt.gcf()) 
-        st.write('dari visualisasi diatas ini dapat diketahui bahwa tipe yang paling banyak digunakan oleh user adalah basic')
+        st.write('Tipe langganan "Basic" merupakan layanan yang paling banyak digunakan oleh pengguna Netflix. Pengguna mungkin memilih langganan dasar karena cukup memenuhi kebutuhan hiburan mereka tanpa perlu fitur tambahan yang ditawarkan oleh langganan premium. untuk mengatasi hal ini dapat dilakukan penawaran khusus atau diskon untuk meningkatkan jumlah langganan premium, dengan menyoroti manfaat tambahan yang diberikan, seperti kualitas streaming yang lebih tinggi atau akses ke konten eksklusif.')
 
     elif view_option == "Tipe langganan berdasarkan jenis kelamin":
         g = sns.FacetGrid(df, col="Gender", row="Subscription Type", margin_titles=True)
@@ -92,7 +92,8 @@ elif page == "Visualisasi Data":
         plt.title('Distribusi Tipe Langganan')
         plt.axis('equal')  
         st.pyplot(plt.gcf())  
-        st.write('dari visualisasi diatas terdapat 3 jenis tipe pengguna yaitu basic,standar dan premium. pada gambar diatas dapat diketahui bahwa tipe langganan yang palling banyak digunakan adalah basic yaitu sebesar 40.0%, selanjutnya adalah standard yaitu sebesar 30.7%, lalu premium sebesar 29.3%.')
+        st.write('dari visualisasi diatas terdapat 3 jenis tipe pengguna yaitu basic,standar dan premium. pada gambar diatas dapat diketahui bahwa tipe langganan yang palling banyak digunakan adalah basic yaitu sebesar 40.0%. Pengguna mungkin memilih langganan basic karena cukup memenuhi kebutuhan hiburan mereka tanpa perlu fitur tambahan yang ditawarkan oleh langganan premium. untuk mengatasi hal ini dapat dilakukan penawaran khusus atau diskon untuk meningkatkan jumlah langganan premium, dengan menyoroti manfaat tambahan yang diberikan, seperti kualitas streaming yang lebih tinggi atau akses ke konten eksklusif.')
+        
 
 
     elif pie_chart_option == "Distribusi Perangkat":
@@ -102,7 +103,8 @@ elif page == "Visualisasi Data":
         plt.title('Distribusi Perangkat')
         plt.axis('equal')  
         st.pyplot(plt.gcf())  
-        st.write('pada visualisasi diatas dapat diketahui banyak device yang digunakan user untuk mengakses netflix ada 4 perangkat yang dapat digunakan, gambar diatas juga memberikan informasi mengenai presentase perangkat yang digunakan. dari gambar tersebut dapat diketahui bahwa perangkat yang paling banyak digunakan adalah laptop yaitu sebesar 25.4%.')
+        st.write('dari visualisasi diatas dapat diketahui bahwa Laptop adalah perangkat utama yang digunakan oleh pengguna Netflix untuk mengakses layanan.Pengguna lebih memilih pengalaman menonton yang lebih besar dan lebih nyaman yang ditawarkan oleh layar laptop. Tingkatkan responsif dan fungsionalitas platform Netflix di laptop, dan tambahkan fitur-fitur yang memungkinkan penonton untuk dengan mudah membagikan konten atau membuat daftar putar, sehingga meningkatkan kenyamanan pengguna.')
+
 
     st.subheader('Number of Missing Values for Each Column:')
     missing_values = df.isnull().sum()
